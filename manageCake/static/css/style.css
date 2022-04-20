@@ -142,7 +142,7 @@ html {
 .foot_content {
     padding-top: 12px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .col_1,
@@ -151,6 +151,7 @@ html {
     list-style: none;
     color: #fff;
 }
+
 
 .list_text_1,
 .list_text_2,
@@ -161,6 +162,7 @@ html {
 
 .list_text {
     margin-top: 6px;
+    text-align: center;
 }
 
 .col_1 > li,
