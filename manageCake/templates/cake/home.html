@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href=" {% static 'css/style.css' %} " />
+<link
+  rel="stylesheet"
+  href=" {% static 'font/themify-icons-font/themify-icons/themify-icons.css' %} "
+/>
+
+{% comment %} header {% endcomment %}
+<div class="navbar">
+  <div class="navbar_logo">
+    <a href="#" class="cover_logo"
+      ><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo"
+    /></a>
+  </div>
+  <div class="navbar_text">
+    <ul class="navbar_list">
+      <a href=""><li class="navbar_item">Dessert</li></a>
+      <a href=""><li class="navbar_item">Seasonal</li></a>
+      <a href=""><li class="navbar_item">Healthier</li></a>
+      <a href=""><li class="navbar_item">Baking 101</li></a>
+      <a href=""><li class="navbar_item">About</li></a>
+    </ul>
+  </div>
+  <div class="navbar_icon">
+    <a href=""><i class="ti-search icon"></i></a>
+    <a href=""><i class="ti-facebook icon"></i></a>
+    <a href=""><i class="ti-instagram icon"></i></a>
+    <a href=""><i class="ti-twitter icon"></i></a>
+  </div>
+</div>
+{% comment %} content {% endcomment %} {% comment %} footer {% endcomment %}
+<div class="coverhead">
+  <div class="head">
+    Sign up for our Newletters
+    <div class="text">
+      Receive my "10 Melt-In-Your-Mouth" Chocolate Chip Cookies Ebook & get my
+      Latest Recipes!
+    </div>
+  </div>
+</div>
+
+<div class="content_text">Raider favorites on KOC</div>
+
+{% endblock %}
