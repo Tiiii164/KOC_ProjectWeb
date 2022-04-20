@@ -96,12 +96,14 @@ html {
     text-transform: uppercase;
     font-weight: bolder;
     margin-top: 16px;
+    color: #fff;
 }
 
 .text {
     font-size: 18px;
     text-align: center;
     margin-top: 12px;
+    color: #fff;
 }
 
 .form_field {
@@ -112,13 +114,14 @@ html {
 
 .cover_head_all {
     display: flex;
-    margin-top: 20px;
+    margin-top: 360px;
+    background-color: #ffb6c1;
 }
 
 .cover_head {
     width: 70%;
-    border: #000 4px solid;
-    padding-bottom: 28px;
+    border-bottom: #fff 4px solid;
+    padding-bottom: 30px;
     float: center;
     margin: auto;
 }
@@ -132,7 +135,8 @@ html {
 }
 
 .cover_foot {
-    margin-top:32px
+    margin-top: 0px;
+    background-color: #ffb6c1;
 }
 
 .foot_content {
@@ -144,6 +148,7 @@ html {
 .col_2,
 .col_3 {
     list-style: none;
+    color: #fff;
 }
 
 .list_text_1,
@@ -166,4 +171,5 @@ html {
 .text_end {
     margin-top: 32px;
     text-align: center;
+    color: #fff;
 }
