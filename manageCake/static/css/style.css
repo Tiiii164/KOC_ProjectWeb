@@ -106,11 +106,17 @@ html {
     justify-content: space-evenly;
 }
 
+.cover_head_all {
+    display: flex;
+    margin-top: 20px;
+}
+
 .cover_head {
-    margin: 20px 0 0 280px;
-    width: 1000px;
+    width: 70%;
     border: #000 4px solid;
     padding-bottom: 28px;
+    float: center;
+    margin: auto;
 }
 
 .form_email,
