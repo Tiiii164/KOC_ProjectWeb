@@ -12,7 +12,7 @@ html {
 /* head */
 
 .navbar {
-    height: 150px;
+    height: 160px;
     background-color: #ffb6c1;
 }
 
@@ -22,8 +22,8 @@ html {
 }
 .logo {
     width: 160px;
-    height: 140px;
-    margin-left: 5px;
+    height: 150px;
+    margin-left: 10px;
 }
 .cover_logo {
     display: inline-block;
