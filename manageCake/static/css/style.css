@@ -12,7 +12,7 @@ html {
 /* head */
 
 .navbar {
-    height: 210px;
+    height: 160px;
     background-color: #ffb6c1;
 }
 
@@ -20,7 +20,11 @@ html {
     margin-top: 4px;
     float:left;
 }
-
+.logo {
+    width: 160px;
+    height: 150px;
+    margin-left: 10px;
+}
 .cover_logo {
     display: inline-block;
 }
@@ -39,7 +43,7 @@ html {
     padding: 0 16px;
     color:#fff;
     font-weight: bold;
-    margin-top: 74px;
+    margin-top: 55px;
     line-height: 52px;
 }
 
@@ -53,7 +57,7 @@ html {
 
 .navbar_icon {
     float: right;
-    line-height: 210px;
+    line-height: 170px;
 }
 
 .navbar_icon > a {
