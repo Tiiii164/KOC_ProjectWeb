@@ -5,6 +5,6 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('customer', views.show_customer)
+    path('', views.show_customer)
 
 ]
