@@ -140,6 +140,7 @@ html {
 }
 
 .foot_content {
+    padding-top: 12px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -172,4 +173,5 @@ html {
     margin-top: 32px;
     text-align: center;
     color: #fff;
+    padding-bottom: 28px;
 }
