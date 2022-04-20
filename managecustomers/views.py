@@ -5,4 +5,4 @@ from django import views
 
 
 def show_customer(request):
-    return render(request, "customers/customer.html")
+    return render(request, "/customer.html")
