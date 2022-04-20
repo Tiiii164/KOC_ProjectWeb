@@ -32,6 +32,7 @@ html {
 .navbar_list {
     list-style: none;
     display: inline-block;
+    font-family: Comic Sans, Comic Sans MS, cursive;
 }
 
 
@@ -86,6 +87,7 @@ html {
     text-align: center;
     font-weight: bold;
     margin-top: 36px;
+    font-family: Gabriola;
 }
 
 /* footer */
@@ -97,13 +99,15 @@ html {
     font-weight: bolder;
     margin-top: 16px;
     color: #fff;
+    font-family: cursive;
 }
 
 .text {
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
     margin-top: 12px;
     color: #fff;
+    font-family: Gabriola;
 }
 
 .form_field {
@@ -150,6 +154,8 @@ html {
 .col_3 {
     list-style: none;
     color: #fff;
+    font-family: Gabriola;
+    font-size: 20px;
 }
 
 
