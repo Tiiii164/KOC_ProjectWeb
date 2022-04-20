@@ -6,4 +6,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("manageCake.urls")),
+    path('customer/', include('managecustomers.urls')),
+    path('cart/', include('managecart.urls')),
 ]
