@@ -1,5 +1,21 @@
-{%load static%}
+{% extends "customer/baseCustomer.html" %}
+{% load static %}
 
-gì đó gì đó
-gì đó gì đó
-<scriptsrc="{​% static 'js/index.js' %}​"></script>
+{% block content %}
+<link rel="stylesheet" href=" {% static 'css/customer.css' %} " />
+<link
+  rel="stylesheet"
+  href=" {% static 'font/themify-icons-font/themify-icons/themify-icons.css' %} "
+/>
+
+
+<script src="{% static 'js/index.js' %}"></script>
+
+
+<h1>gi do gi do</h1>
+
+
+
+
+
+{% endblock %}

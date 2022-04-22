@@ -1,0 +1,39 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Customer</title>
+</head>
+<body>
+    
+    {% block content %}
+    <div class="navbar">
+        <div class="navbar_logo">
+          <a href="" class="cover_logo"
+            ><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo"
+          /></a>
+        </div>
+        <div class="navbar_text">
+          <ul class="navbar_list">
+            <a href=""><li class="navbar_item">Birthday Cakes</li></a>
+            <a href=""><li class="navbar_item">Desert</li></a>
+            <a href=""><li class="navbar_item">Drinks</li></a>
+            <a href=""><li class="navbar_item">About</li></a>
+          </ul>
+        </div>
+        <div class="navbar_icon">
+          <a href=""><i class="ti-search icon"></i></a>
+          <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
+          <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
+          <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
+        </div>
+      </div>
+    {% endblock %}
+</body>
+
+</html>
