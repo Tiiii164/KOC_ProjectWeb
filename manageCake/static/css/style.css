@@ -83,14 +83,14 @@ html {
 
 .search_input {
     padding: 4px;
-    width: 200px;
+    width: 180px;
     border-radius: 12px;
 }
 
 .input_text {
     line-height: 160px;
     float: left;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 /* content */
