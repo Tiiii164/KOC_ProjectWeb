@@ -9,6 +9,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
 /* head */
 
 .navbar {
@@ -190,3 +195,62 @@ html {
 #page-header{
     background-color: red;
 }
+
+/* CUSTOMER */
+/* CUSTOMER */
+
+
+/* left CUSTOMER */
+.section-left{
+    background-color: pink;
+    max-width: 50%;
+    margin-top:50px;
+
+    
+}
+
+.section-left-profile{
+    width: 50%;
+    border-radius: 300px;
+    margin: 50px 50px;
+}
+
+.section-left-btn{
+    flex-direction: column;
+    display: flex;
+}
+.btn {
+    /* display: flex; */
+    text-decoration: none;
+    color: rgb(87, 63, 63);
+    font-weight: 700;
+    /* margin-left: 70px; */
+    background-color: rgb(248, 108, 132);
+    padding: 15px 30px;
+    border-radius: 5px;
+    /* bo tròn */
+    margin: 20px 5px;
+    /* khoảng cách trên dưới và ngang */
+    display: inline-block;
+    /* vừa dùng thuộc tính của line vừa dùng của block */
+    width: 190px;
+    /* chiều rộng của cái ô button */
+    text-align: center;
+    /* căn chữ ở giữa */
+    transition: all 0.7s;
+  }
+  .btn:hover,
+  .btn:active {
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+.section-left-logout{
+
+}
+
+.logout-icon{
+
+}
+
+/* right customer */
