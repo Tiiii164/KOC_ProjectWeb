@@ -80,3 +80,16 @@ html {
     border-bottom: 5px solid #000;
 }
 
+article h3{
+    text-align: center;
+    padding: 15px 20px;
+    color: pink;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-style: solid;
+    border-color: pink;
+    border-radius: 10px;
+    width: 25%;
+    margin: 12px 0 0 24px;
+}
