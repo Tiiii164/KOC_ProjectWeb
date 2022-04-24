@@ -254,3 +254,33 @@ html {
 }
 
 /* right customer */
+
+.section-right{
+    float: right;
+    background-color: aqua;
+    width: 50%;
+}
+
+.section-right-title{
+    color: rgb(87, 63, 63);
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+    /* căn giữa */
+    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-left: -190px;
+    position: relative;
+}
+
+.section-right-input{
+
+}
+
+.input-title{
+
+}
+
+.customer-input{
+
+}
