@@ -201,9 +201,15 @@ html {
 
 
 /* left CUSTOMER */
+.main-section{
+    flex-direction: row;
+    display: flex;
+    align-content: center;
+}
+
 .section-left{
     background-color: pink;
-    max-width: 50%;
+    width: 40%;
     margin-top:50px;
 
     
@@ -212,7 +218,7 @@ html {
 .section-left-profile{
     width: 50%;
     border-radius: 300px;
-    margin: 50px 50px;
+    margin: 15% 25%;
 }
 
 .section-left-btn{
@@ -238,6 +244,8 @@ html {
     text-align: center;
     /* căn chữ ở giữa */
     transition: all 0.7s;
+    /*  */
+    margin-left: 10%;
   }
   .btn:hover,
   .btn:active {
@@ -246,10 +254,14 @@ html {
   }
 
 .section-left-logout{
-
+    position: relative;
 }
 
 .logout-icon{
+    position: absolute;
+    margin-left:16%;
+    margin-top: 6.5%;
+
 
 }
 
@@ -258,27 +270,31 @@ html {
 .section-right{
     float: right;
     background-color: aqua;
-    width: 50%;
+    width: 60%;
+    margin-top:50px;
 }
 
-.section-right-title{
+.section-title{
     color: rgb(87, 63, 63);
     font-size: 180%;
     font-weight: 700;
     text-align: center;
     /* căn giữa */
-    margin-bottom: 70px;
+    /* margin-bottom: 70px;
     margin-top: 70px;
     margin-left: -190px;
-    position: relative;
+    position: relative; */
 }
 
 .section-right-input{
-
+    display: flex;
+    flex-direction: column;
+    margin-left:15%;
 }
 
 .input-title{
-
+    margin-top: 10%;
+    margin-bottom: 2%
 }
 
 .customer-input{
