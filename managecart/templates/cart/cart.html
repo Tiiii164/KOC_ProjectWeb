@@ -1,5 +1,5 @@
 {% extends "cart/basecart.html" %}{% load static %}{% block content %}
-<link rel="stylesheet" href=" {% static 'css/style.css' %} " />
+<link rel="stylesheet" href=" {% static 'css/cart.css' %} " />
 <link
   rel="stylesheet"
   href=" {% static 'font/themify-icons-font/themify-icons/themify-icons.css' %} "
@@ -28,18 +28,34 @@
     <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
   </div>
 </div>
-<div class="shopping_cart">
-  <ul class="shopping_cart_list">
-   <h1>Shopping Cart</h1>
-   <img src="{% static 'img/King_Of_Cake_3.png' %}" alt="">
-   <h1>Name Product</h1>
-   <h1>Price</h1>
-   <input type="button" onclick="plus()" value="+"/>
-   <input type="text" value="1" style="width:30px; padding:3px 6px;" id="textbox"/>
-   <input type="button" onclick="minus()" value="-"/>
-   <h1>Total Price</h1>
-  </ul>
-</div>
+<article>
+  <div class="shopping Cart123">
+    <h3>Shopping Cart </h3>
+  </div>
+  
+  
+  <div class="shopping_cart">
+    <div class="shopping_cart_list">
+      <img src="{% static 'img/King_Of_Cake_3.png' %}" alt="">
+      <h1>Name Product</h1>
+      <h1>Price</h1>
+      <h1>Total Price</h1>
+    </div>
+    <div class="shopping_cart_list">
+      <img src="{% static 'img/King_Of_Cake_3.png' %}" alt="">
+      <h1>Name Product</h1>
+      <h1>Price</h1>
+      <h1>Total Price</h1>
+    </div>
+    <div class="shopping_cart_list">
+      <img src="{% static 'img/King_Of_Cake_3.png' %}" alt="">
+      <h1>Name Product</h1>
+      <h1>Price</h1>
+      <h1>Total Price</h1>
+    </div>
+  </div>
+</article>
+
 
 
 
