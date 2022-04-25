@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'manageCake',
     'managecustomers',
     'managecart',
+    'manageorder',
 ]
 
 MIDDLEWARE = [
