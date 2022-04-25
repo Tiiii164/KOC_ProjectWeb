@@ -196,3 +196,43 @@ html {
     color: #fff;
     padding-bottom: 28px;
 }
+
+.text{
+    color:#000;
+}
+
+.form{
+    width: 100%;
+    padding: 30px 10vw;
+}
+
+.form input{
+    background-color: #fff;
+    margin: 20px 0;
+    width: 1485px;
+    height: 40px;
+    font-family: Gabriola;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.heading{
+    font-family: Gabriola;
+    font-size: 50px;
+    text-transform:uppercase;
+}
+
+.heading_2{
+    margin-top: -15px;
+    font-family: Gabriola;
+    font-size: 30px;
+}
+
+.three-input-container{
+    display: flex;
+    gap: 20px;
+}
+
+.form-1{
+    width: 100px;
+}
