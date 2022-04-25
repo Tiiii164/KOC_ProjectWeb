@@ -86,7 +86,7 @@ html {
     border: none;
     outline: none;
     padding-left: 8px;
-    padding: 4px;
+    padding: 6px;
     width: 250px;
     border-radius: 12px;
 }
@@ -100,7 +100,7 @@ html {
     align-items: center;
     border-radius: 30px;
     background-color: white;
-    padding: 16px;
+    padding: 12px;
 }
 
 /* content */
