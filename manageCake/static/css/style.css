@@ -57,24 +57,23 @@ html {
 
 .navbar_icon {
     float: right;
-    line-height: 170px;
 }
 
 .navbar_icon > a {
     text-decoration: none;
 }
 
-.ti-search,
+/* .ti-search, */
 .ti-facebook,
 .ti-instagram,
 .ti-twitter,
 .ti-shopping-cart,
 .ti-user {
     padding: 0 8px 18px 8px;
-    margin: 0 12px;
+    margin: 72px 12px 0 12px;
     font-size: 20px;
     color: #fff;
-    
+    float: right;
 }
 
 .icon:hover {
@@ -82,15 +81,23 @@ html {
 }
 
 .search_input {
-    padding: 4px;
-    width: 180px;
-    border-radius: 12px;
+    flex: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
 }
 
 .input_text {
-    line-height: 160px;
-    float: left;
-    margin-left: 60px;
+    width: 250px;
+    height: 40px;
+    float: right;
+    margin: 64px 16px 0 0;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    padding: 16px;
 }
 
 /* content */
