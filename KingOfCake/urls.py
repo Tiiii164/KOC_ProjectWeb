@@ -8,4 +8,5 @@ urlpatterns = [
     path('', include("manageCake.urls")),
     path('customer/', include('managecustomers.urls')),
     path('cart/', include('managecart.urls')),
+    path('order/', include('manageorder.urls')),
 ]
