@@ -80,7 +80,48 @@ html {
     border-bottom: 5px solid #000;
 }
 
-article h3{
+
+
+/* -----------------------Cart-----------------*/
+.cartlist {
+    width: 50%;
+    margin: left;
+    text-align: center;
+    padding-top: 30px;
+}
+.cartlist h2{
+  
+  text-align: center;
+  padding: 15px 20px;
+  color: pink;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-style: solid;
+  border-color: pink;
+  border-radius: 10px;
+  width: 50%;
+  margin: 12px 0 0 30px;
+}
+
+.cartlist table{
+    width: 100%;
+}
+.cartlist table thead tr th:first-child{
+    text-align: left;
+}
+.cartlist table tr td{
+    border: 1px solid black;
+    padding: 12px 0;
+}
+
+.totalcart{
+    width: 50%;
+    margin: left;
+    text-align: left;
+    padding-top: 30px;
+}
+.totalcart h2{
     text-align: center;
     padding: 15px 20px;
     color: pink;
@@ -90,6 +131,7 @@ article h3{
     border-style: solid;
     border-color: pink;
     border-radius: 10px;
-    width: 25%;
-    margin: 12px 0 0 24px;
-}
+    width: 50%;
+    margin: 12px 0 0 30px;
+  }
+

@@ -14,17 +14,21 @@ html {
 .navbar {
     height: 160px;
     background-color: #ffb6c1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .navbar_logo {
     margin-top: 4px;
-    float:left;
+    
 }
 .logo {
     width: 160px;
     height: 150px;
     margin-left: 10px;
 }
+
 .cover_logo {
     display: inline-block;
 }
@@ -43,20 +47,15 @@ html {
     padding: 0 16px;
     color:#fff;
     font-weight: bold;
-    margin-top: 55px;
-    line-height: 52px;
 }
 
 .navbar_item:hover {
     border-bottom: 4px solid #000;
 }
 
-.navbar_text {
-    float: left;
-}
-
 .navbar_icon {
-    float: right;
+    display:flex;
+    align-items: center;
 }
 
 .navbar_icon > a {
@@ -73,7 +72,6 @@ html {
     margin: 72px 12px 0 12px;
     font-size: 20px;
     color: #fff;
-    float: right;
 }
 
 .icon:hover {
@@ -94,8 +92,6 @@ html {
 .input_text {
     width: 250px;
     height: 40px;
-    float: right;
-    margin: 64px 16px 0 0;
     display: flex;
     align-items: center;
     border-radius: 30px;
@@ -149,7 +145,6 @@ html {
     width: 100%;
     border-bottom: #fff 4px solid;
     padding-bottom: 30px;
-    float: center;
     margin: auto;
 }
 
