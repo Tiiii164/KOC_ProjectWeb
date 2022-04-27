@@ -29,13 +29,8 @@ html {
     margin-left: 10px;
 }
 
-.cover_logo {
-    display: inline-block;
-}
-
 .navbar_list {
     list-style: none;
-    display: inline-block;
     font-family: Comic Sans, Comic Sans MS, cursive;
 }
 
@@ -43,14 +38,13 @@ html {
     display: inline-block;
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 32px;
-    padding: 0 16px;
+    padding: 0 16px 12px 16px;
     color:#fff;
     font-weight: bold;
 }
 
 .navbar_item:hover {
-    border-bottom: 4px solid #000;
+    border-bottom: #000 solid 4px;
 }
 
 .navbar_icon {
@@ -68,8 +62,8 @@ html {
 .ti-twitter,
 .ti-shopping-cart,
 .ti-user {
-    padding: 0 8px 18px 8px;
-    margin: 72px 12px 0 12px;
+    padding: 0 8px 12px 8px;
+    margin: 0 12px 0 12px;
     font-size: 20px;
     color: #fff;
 }
