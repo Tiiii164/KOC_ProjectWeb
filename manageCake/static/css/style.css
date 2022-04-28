@@ -94,6 +94,9 @@ html {
 }
 
 /* content */
+.cover_content {
+    border-top: #000 2px solid;
+}
 
 .content_text {
     font-size: 32px;
@@ -101,6 +104,31 @@ html {
     font-weight: bold;
     margin-top: 36px;
     font-family: Gabriola;
+}
+
+.best_seller {
+    border: #000 solid 2px;
+    width: 160px;
+    padding: 12px 0;
+    margin-left: 28px;
+    text-align: center;
+}
+
+.cake_img {
+    width: 250px;
+    height: 250px;
+}
+
+.content_items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+}
+
+.dessert {
+    margin-top: 24px;
 }
 
 /* footer */
@@ -131,7 +159,6 @@ html {
 
 .cover_head_all {
     display: flex;
-    margin-top: 365px;
     background-color: #ffb6c1;
 }
 
@@ -151,7 +178,6 @@ html {
 }
 
 .cover_foot {
-    margin-top: 0px;
     background-color: #ffb6c1;
 }
 
