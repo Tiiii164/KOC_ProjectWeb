@@ -43,6 +43,43 @@
     </div>
       <input type="text" placeholder="Nation">
   </div>
+  <section class="cart-list">
+      <table>
+        <thead>
+          <tr class="description">
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Analyze</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="column" style="display: flex;align-items:center"><img style="width: 100px; border-radius: 6px;"
+                img src="{% static 'img/MyCake_1.jpg' %}" alt="">: Name Product</td>
+            <td class="column">
+              <p class="dollar"><span>0</span><sup>$</sup></p>
+            </td>
+            <td class="column"><input style="width: 30px; outline:none; border-radius: 5px;" type="number" value="1" min="1"></td>
+            <td class="column">
+            <button class="button">Delete</button>
+          </td>
+          </tr>
+          <tr>
+            <td class="column" style="display: flex;align-items:center"><img style="width: 100px; border-radius: 6px;"
+                img src="{% static 'img/MyCake_2.jpg' %}" alt="">: Name Product</td>
+            <td class="column">
+              <p class="dollar"><span>0</span><sup>$</sup></p>
+            </td>
+            <td class="column"><input style="width: 30px; outline:none; border-radius: 5px;" type="number" value="1" min="1"></td>
+            <td class="column-1">
+              <button class="button">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+  
 {% comment %} content {% endcomment %}
 
 {% comment %} footer {% endcomment %}

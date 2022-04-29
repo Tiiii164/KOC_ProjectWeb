@@ -246,3 +246,55 @@ html {
 .form-1{
     width: 100px;
 }
+
+.cart-list {
+    width: 100%;
+    margin: left;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -20%;
+}
+.cart-list table{
+    width: 80%;
+    margin-left: 10%;
+}
+.cart-list table thead tr th:first-child{
+    text-align: left;
+}
+.cart-list table tr td{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 12px 0;
+}
+
+.description{
+    font-family: cursive;
+}
+
+.column{
+    text-align: center;
+    font-family: cursive;
+}
+
+.dollar{
+    font-family: cursive;
+}
+
+.button{
+    border: 2px solid black;;
+    border-radius: 5px;
+}
+
+.column-1{
+    text-align: center;
+    font-family: cursive;
+}
+
+.button{
+    border: 1px solid black;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cursive;
+    background-color: rgb(68, 66, 57);
+    color: #fff;
+}
