@@ -202,13 +202,35 @@ html {
 
 /* CUSTOMER */
 /* CUSTOMER */
-
+/* body{
+    background-image: linear-gradient(
+        45deg,
+        rgba(247, 129, 149, 0.5) 55%,
+        rgba(253, 188, 191, 0.8)
+      ),
+      url('{% static "customerimg/MyCake_1.jpg"%}');
+        
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200vh;
+} */
+body{
+    /* height: 90%; */
+}
+#bg{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 30vh;
+}
 
 /* left CUSTOMER */
 .main-section{
     flex-direction: row;
     display: flex;
     align-content: center;
+    margin-top: 15%;
 }
 
 .section-left{
