@@ -9,11 +9,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
 /* head */
 
 .navbar {
@@ -40,10 +35,9 @@ html {
     font-family: Comic Sans, Comic Sans MS, cursive;
 }
 
-
 .navbar_item {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-left: 32px;
     padding: 0 16px;
@@ -63,7 +57,9 @@ html {
 
 .navbar_icon {
     float: right;
-    line-height: 170px;
+    line-height: 20px;
+    margin-top:  70px;
+
 }
 
 .navbar_icon > a {
@@ -73,16 +69,31 @@ html {
 .ti-search,
 .ti-facebook,
 .ti-instagram,
-.ti-twitter {
+.ti-twitter,
+.ti-shopping-cart,
+.ti-user {
     padding: 0 8px 18px 8px;
-    margin: 0 18px;
-    font-size: 24px;
+    margin: 0 12px;
+    font-size: 20px;
     color: #fff;
     
 }
 
 .icon:hover {
     border-bottom: 5px solid #000;
+}
+
+.search_input {
+    padding: 4px;
+    width: 180px;
+    border-radius: 12px;
+    margin-top:  70px;
+}
+
+.input_text {
+    line-height: 160px;
+    float: left;
+    margin-left: 60px;
 }
 
 /* content */
@@ -189,13 +200,6 @@ html {
     padding-bottom: 28px;
 }
 
-.page-header{
-    background-color: rgb(186, 39, 39);
-}
-#page-header{
-    background-color: red;
-}
-
 /* CUSTOMER */
 /* CUSTOMER */
 
@@ -210,11 +214,14 @@ html {
 .section-left{
     background-color: pink;
     width: 40%;
-    margin-top:50px;
-
-    
+    margin-top:70px;
 }
-
+.section-right{
+    float: right;
+    background-color: aqua;
+    width: 60%;
+    margin-top:70px;
+}
 .section-left-profile{
     width: 50%;
     border-radius: 300px;
@@ -267,13 +274,6 @@ html {
 
 /* right customer */
 
-.section-right{
-    float: right;
-    background-color: aqua;
-    width: 60%;
-    margin-top:50px;
-}
-
 .section-title{
     color: rgb(87, 63, 63);
     font-size: 180%;
@@ -300,3 +300,4 @@ html {
 .customer-input{
 
 }
+
