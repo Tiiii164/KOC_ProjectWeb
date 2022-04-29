@@ -17,7 +17,7 @@
 
 {% comment %} body <script src="{% static 'js/customer.js' %}"></script>{% endcomment %}
 
-<body>
+
   <header>
     <div class="navbar">
       <div class="navbar_logo">
@@ -48,7 +48,12 @@
   <div class="clearfix"></div>
 
 
-
+<body id="bg" style="background-image: linear-gradient(
+  45deg,
+  rgba(247, 129, 149, 0.5) 55%,
+  rgba(253, 188, 191, 0.8)
+), url('{% static "customerimg/MyCake_19.jpg"%}')";>
+  
   <section class="main-section">
     <div class="section-left">
       <div >
@@ -61,12 +66,7 @@
         <a class="btn" href="#">Personal information</a>
         <a class="btn" href="#">Privacy</a>
         <a class="btn" href="#">Notifications</a>
-      </div>
-      <div class="section-left-logout">
-        <div class="logout-icon">
-          <a  href="#"><i class="ti-shift-left icon"></i></a>
-        </div>
-          <a class="btn" href="#">Log-Out</a>
+        <a class="btn ti-shift-left" href="#"> Log-Out</a>
       </div>
     </div>
   
@@ -80,17 +80,17 @@
         <h4 class="input-title">Last Name</h4>
         <input type="text" class="customer-input" placeholder="Last Name*" />
 
-        <h4 class="input-title">First Name</h4>
-        <input type="text" class="customer-input" placeholder="First Name*" />
+        <h4 class="input-title">User Name</h4>
+        <input type="text" class="customer-input" placeholder="User Name*" />
   
-        <h4 class="input-title">Last Name</h4>
-        <input type="text" class="customer-input" placeholder="Last Name*" />
+        <h4 class="input-title">Password</h4>
+        <input type="text" class="customer-input" placeholder="Password*" />
 
-        <h4 class="input-title">First Name</h4>
-        <input type="text" class="customer-input" placeholder="First Name*" />
+        <h4 class="input-title">Phone Number</h4>
+        <input type="text" class="customer-input" placeholder="Phone Number*" />
   
-        <h4 class="input-title">Last Name</h4>
-        <input type="text" class="customer-input" placeholder="Last Name*" />
+        <h4 class="input-title">Email</h4>
+        <input type="email" class="customer-input" placeholder="Email*" />
       </div>
     </div>
   </section>
