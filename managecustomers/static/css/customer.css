@@ -231,6 +231,8 @@ body{
     display: flex;
     align-content: center;
     margin-top: 15%;
+    font-family: Gabriola;
+    font-size: 20px;
 }
 
 .section-left{
@@ -275,12 +277,17 @@ body{
     transition: all 0.7s;
     /*  */
     margin-left: 10%;
+    font-family: cursive;
   }
   .btn:hover,
   .btn:active {
     border-radius: 20px;
     color: rgb(255, 255, 255);
   }
+
+.btn ti-shift-left{
+    font-family: cursive;
+}
 
 .section-left-logout{
     position: relative;
@@ -316,10 +323,10 @@ body{
 
 .input-title{
     margin-top: 10%;
-    margin-bottom: 2%
+    margin-bottom: 2%;
 }
 
 .customer-input{
-
+    font-family: cursive;
 }
 
