@@ -40,27 +40,29 @@
             <th>Product</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th>Choose</th>
+            <th>Analyze</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="display: flex;align-items:center"><img style="width: 70px;"
+            <td class="column" style="display: flex;align-items:center"><img style="width: 70px;"
                 src="{% static 'img/King_Of_Cake_3.png' %}" alt="">Name Product</td>
-            <td>
-              <p><span>0</span><sup>$</sup></p>
+            <td class="column">
+              <p class="dollar"><span>0</span><sup>$</sup></p>
             </td>
-            <td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td>
-            <td style="cursor:pointer;">Delete</td>
+            <td class="column"><input style="width: 30px; outline:none; border-radius: 5px;" type="number" value="1" min="1"></td>
+            <td class="buttonoutline">
+              <button class="button1">Delete</button></td>
           </tr>
           <tr>
-            <td style="display: flex;align-items:center"><img style="width: 70px;"
+            <td class="column" style="display: flex;align-items:center"><img style="width: 70px;"
                 src="{% static 'img/King_Of_Cake_3.png' %}" alt="">Name Product</td>
-            <td>
-              <p><span>0</span><sup>$</sup></p>
+            <td class="column">
+              <p class="dollar"><span>0</span><sup>$</sup></p>
             </td>
-            <td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td>
-            <td style="cursor:pointer;">Delete</td>
+            <td class="column"><input style="width: 30px; outline:none; border-radius: 5px;" type="number" value="1" min="1"></td>
+            <td class="buttonoutline">
+              <button class="button1">Delete</button></td>
           </tr>
         </tbody>
       </table>
@@ -88,14 +90,57 @@
         100$
       </div>
     </div>
-    <div class="button">
-      <button>
+      <button class="button">
         Proceed to checkout
       </button>
-    </div>
   </section>
 </div>
-  
+{% comment %} footer {% endcomment %}
+<div class="cover_head_all">
+  <div class="cover_head">
+    <div class="head">
+      <div class="head_text">Sign up for our Newletters</div>
+      <div class="text">
+        Receive my "1000 Melt-In-Your-Mouth" Chocolate Chip Cookies Ebook &
+        get my Latest Recipes!
+      </div>
+      <div class="form_field">
+        <input type="email" class="form_email" placeholder="Email *" />
+        <input type="text" class="form_name" placeholder="Name *" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cover_foot">
+  <div class="foot_content">
+    <div class="foot_content_1">
+      <ul class="col_1">
+        <li class="list_text_1">Information</li>
+        <li class="list_text_1">About</li>
+        <li class="list_text_1">Contact</li>
+        <li class="list_text">Privacy Policy</li>
+      </ul>
+    </div>
+    <div class="foot_content_2">
+      <ul class="col_2">
+        <li class="list_text_2">Contact</li>
+        <li class="list_text">Gmail: kingofcake@gmail.com</li>
+        <li class="list_text">Hotline: (099) 999 9999</li>
+      </ul>
+    </div>
+    <div class="foot_content_3">
+      <ul class="col_3">
+        <li class="list_text_3">Follow</li>
+        <li class="list_text">FACEBOOK</li>
+        <li class="list_text">INSTAGRAM</li>
+        <li class="list_text">TWITTER</li>
+      </ul>
+    </div>
+  </div>
+  <div class="text_end">
+    COPYRIGHT @ 2022 King Of Cake - COOKIES, BROWNIE, AND CHOCOLATE OBSESSED!
+  </div>
 
 
 
@@ -103,3 +148,4 @@
 
 
 {% endblock %}
+</div>
