@@ -94,69 +94,58 @@ html {
 }
 
 /* content */
-.cover_content {
-    border-top: #000 2px solid;
-}
-
-.content_text {
-    font-size: 32px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 36px;
-    font-family: Gabriola;
-}
-
-.best_seller {
-    border: #000 solid 2px;
-    width: 160px;
-    padding: 12px 0;
-    margin-left: 28px;
-    text-align: center;
-}
-
 .cake_img {
     width: 250px;
     height: 200px;
-    margin: 12px 0;
 }
 
-.cake_name {
+.head_description {
+    display: flex;
     text-align: center;
 }
 
-.cake_price {
+.body_description {
     display: flex;
-    justify-content: space-between;
-}
-
-.price {
-    padding-top: 6px;
-}
-
-.add_to_cart {
-    padding: 6px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s linear;
+    text-align: center;
     font-family: cursive;
 }
 
-.add_to_cart:hover {
-    color: #fff;
-    background-color: #ffb6c1;
-    font-family: cursive;
+.head_items_1,
+.head_items_3,
+.head_items_4 {
+    flex:1;
 }
 
-.cover_items {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    border-bottom: #000 2px solid;
-    padding-bottom: 24px;
+.head_items_2 {
+    flex:2;
 }
 
-.dessert {
-    margin-top: 24px;
+.head_items_5 {
+    flex:3;
+}
+
+.body_items_1,
+.body_items_3,
+.body_items_4 {
+    flex:1;
+}
+
+.body_items_2 {
+    flex:2;
+}
+
+.body_items_5 {
+    flex:3;
+}
+
+.h_items {
+    border: #000 2px solid;
+    padding: 20px 12px;
+}
+
+.b_items {
+    border: #000 2px solid;
+    padding: 24px 12px;
 }
 
 /* footer */

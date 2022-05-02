@@ -1,5 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
-<link rel="stylesheet" href=" {% static 'css/style.css' %} " />
+{% extends 'base.html' %}
+{% block title %}Detail Page{% endblock %} {% load static %} {% block content %}
+<link rel="stylesheet" href=" {% static 'css/detail.css' %} " />
 <link
   rel="stylesheet"
   href=" {% static 'font/themify-icons-font/themify-icons/themify-icons.css' %} "
@@ -42,26 +43,23 @@
   </div>
 </div>
 {% comment %} content {% endcomment %}
-<div class="cover_content">
-  <div class="content_text">Beautiful Cakes for Beautiful Seassion</div>
-  {% comment %} best seller {% endcomment %}
-  <div class="best_seller">Best Seller</div>
-  <div class="cover_items">
-  {% for product in products %}
-    <div class="cake_items">
-      <div class="cake_name">{{product.Name}}</div>
-      <a href="detail"><img src="{{product.Image}}" alt="{{product.Name}}" class="cake_img"></a>
-      <div class="cake_price">
-        <div class="price">
-          {{product.Price}} VNĐ
-        </div>
-        <button class="add_to_cart">ADD TO CART</button>
-      </div>
+<div class="table_description">
+    <div class="head_description">
+        <div class="head_items_1 h_items">No</div>
+        <div class="head_items_2 h_items">Image</div>
+        <div class="head_items_3 h_items">Name</div>
+        <div class="head_items_4 h_items">Price</div>
+        <div class="head_items_5 h_items">Description</div>
     </div>
-  {% endfor %}
-  </div>
-  {% comment %} Dessert Cake {% endcomment %}
-  <div class="best_seller dessert">New Cakes</div>
+    {% for product in products %}
+    <div class="body_description">
+          <div class="body_items_1 b_items">{{product.id}}</div>
+          <div class="body_items_2 b_items"><img src="{{product.Image}}" alt="{{product.Name}}" class="cake_img"></div>
+          <div class="body_items_3 b_items">{{product.Name}}</div>
+          <div class="body_items_4 b_items">{{product.Price}} VNĐ</div>
+          <div class="body_items_5 b_items">{{product.Description}}</div>
+    </div>
+    {% endfor %}
 </div>
   {% comment %} footer {% endcomment %}
   <div class="cover_head_all">
