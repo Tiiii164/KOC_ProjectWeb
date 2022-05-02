@@ -14,80 +14,93 @@ html {
 .navbar {
     height: 160px;
     background-color: #ffb6c1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .navbar_logo {
     margin-top: 4px;
-    float:left;
+    
 }
 .logo {
     width: 160px;
     height: 150px;
     margin-left: 10px;
 }
-.cover_logo {
-    display: inline-block;
-}
 
 .navbar_list {
     list-style: none;
-    display: inline-block;
     font-family: Comic Sans, Comic Sans MS, cursive;
 }
 
-
 .navbar_item {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
-    margin-left: 32px;
-    padding: 0 16px;
+    padding: 0 16px 12px 16px;
     color:#fff;
     font-weight: bold;
-    margin-top: 55px;
-    line-height: 52px;
 }
 
 .navbar_item:hover {
-    border-bottom: 4px solid #000;
-}
-
-.navbar_text {
-    float: left;
+    border-bottom: #000 solid 4px;
 }
 
 .navbar_icon {
-    float: right;
-    line-height: 170px;
+    display:flex;
+    align-items: center;
 }
 
 .navbar_icon > a {
     text-decoration: none;
 }
 
-.ti-search,
+/* .ti-search, */
 .ti-facebook,
 .ti-instagram,
-.ti-twitter {
-    padding: 0 8px 18px 8px;
-    margin: 0 18px;
-    font-size: 24px;
+.ti-twitter,
+.ti-shopping-cart,
+.ti-user {
+    padding: 0 8px 12px 8px;
+    margin: 0 12px 0 12px;
+    font-size: 20px;
     color: #fff;
-    
 }
 
 .icon:hover {
     border-bottom: 5px solid #000;
 }
 
+.search_input {
+    flex: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    padding: 6px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.input_text {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    padding: 12px;
+}
 
 
 /* -----------------------Cart-----------------*/
 .cartlist {
     width: 50%;
-    margin: left;
     text-align: center;
     padding-top: 30px;
+    flex: 1;
+    align-items: center;
 }
 .cartlist h2{
   
@@ -114,12 +127,15 @@ html {
     border: 1px solid black;
     padding: 12px 0;
 }
-
+.cart1234{
+    display: flex;
+}
 .totalcart{
     width: 50%;
-    margin: left;
     text-align: left;
     padding-top: 30px;
+    flex: 1;
+    align-items: center;
 }
 .totalcart h2{
     text-align: center;
@@ -135,3 +151,44 @@ html {
     margin: 12px 0 0 30px;
   }
 
+.subtotals{
+    display: flex;
+}
+.subtotal1{
+    flex: 1;
+}
+.subtotal{
+    border: black 2px solid;
+    width: 30%;
+    padding: 16px;
+    margin-top: 24px;
+    margin-left: 44px;
+    text-align: center;
+}
+.money{
+    flex: 1;
+    margin-top: 40px;
+}
+.totals{
+    display: flex;
+}
+.total1{
+    flex:1
+}
+.total{
+    border: black 2px solid;
+    width: 30%; 
+    padding: 16px;
+    margin-top: 24px;
+    margin-left: 44px;
+    text-align: center;
+}
+.money1{
+    flex: 1;
+    margin-top: 40px;
+}
+.button{
+    margin-top: 24px;
+    margin-left: 25%;
+    
+}

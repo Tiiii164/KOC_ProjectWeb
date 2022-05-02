@@ -6,37 +6,31 @@
 {% comment %} header {% endcomment %}
 <div class="navbar">
   <div class="navbar_logo">
-<<<<<<< HEAD
-    <a href="" class="cover_logo"><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo" /></a>
-=======
-    <a href="http://localhost:8000/" class="cover_logo"
-      ><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo"
+    <a href="http://localhost:8000/" class="cover_logo"><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="logo" class="logo"
     /></a>
->>>>>>> 4484734a91be5048c9921090bc258c6b97fc0c2f
   </div>
   <div class="navbar_text">
     <ul class="navbar_list">
-      <a href="">
-        <li class="navbar_item">Birthday Cakes</li>
-      </a>
-      <a href="">
-        <li class="navbar_item">Desert</li>
-      </a>
-      <a href="">
-        <li class="navbar_item">Drinks</li>
-      </a>
-      <a href="">
-        <li class="navbar_item">About</li>
-      </a>
+      <a href=""><li class="navbar_item">Birthday Cakes</li></a>
+      <a href=""><li class="navbar_item">Desert</li></a>
+      <a href=""><li class="navbar_item">Drinks</li></a>
+      <a href=""><li class="navbar_item">About</li></a>
     </ul>
   </div>
+  <div class="input_text">
+    <i class="ti-search"></i>
+    <input type="text" class="search_input" placeholder="Search product here..."/>
+  </div>
   <div class="navbar_icon">
-    <a href=""><i class="ti-search icon"></i></a>
+    <a href="http://localhost:8000/customer/"><i class="ti-user icon"></i></a>
     <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
     <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
     <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
+    <a href="http://localhost:8000/cart/"><i class="ti-shopping-cart icon"></i></a>
   </div>
+  
 </div>
+<div class="cart1234">
   <section class="cartlist">
     <h2>Shopping Cart</h2>
     <form action="">
@@ -74,22 +68,34 @@
   </section>
   <section class="totalcart">
     <h2>Total Cart</h2>
-    <form action="">
-        <tr>
-          <td>Subtotals</td>
-           <td>
-            <p><span>0</span><sup>$</sup></p>
-          </td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>
-            <p><span>0</span><sup>$</sup></p>
-        </td>
-        </tr>
-        <button>Process to checkout</button>
-    </form>
+    <div class="subtotals">
+      <div class="subtotal1">
+        <div class="subtotal">
+          Subtotals
+        </div>
+      </div>
+      <div class="money">
+        100$
+      </div>
+    </div>
+    <div class="totals">
+      <div class="total1">
+        <div class="total">
+          Total
+        </div>
+      </div>
+      <div class="money1">
+        100$
+      </div>
+    </div>
+    <div class="button">
+      <button>
+        Proceed to checkout
+      </button>
+    </div>
   </section>
+</div>
+  
 
 
 
