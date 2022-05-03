@@ -1,7 +1,5 @@
 
 
-
-
 {% block content %}
 {% endblock %}
 {% load static %} {% block content %}
@@ -49,59 +47,6 @@
     ></a>
   </div>
 </div>
-
-{% comment %} body {% endcomment %}
-<body id="bg" style="background-image: linear-gradient(
-  45deg,
-  rgba(247, 129, 149, 0.5) 55%,
-  rgba(253, 188, 191, 0.8)
-), url('{% static "customerimg/MyCake_19.jpg"%}');>
-  
-  <section class="main-section">
-    <div class="section-left">
-      <div >
-        <h1  class="section-title">Profile's Picture</h1>
-        <a href="https://www.facebook.com/PTB164/"><img class="section-left-profile" src="{% static 'customerimg/profile1.jpg' %}" alt=""></a>
-      </div>
-      <div class="clearfix"></div>
-      <div class="section-left-btn">
-        <a class="btn" href="#">Account settings</a>
-        <a class="btn" href="#">Personal information</a>
-        <a class="btn" href="#">Privacy</a>
-        <a class="btn" href="#">Notifications</a>
-        <a class="btn ti-shift-left" href="#"> Log-Out</a>
-      </div>
-    </div>
-  
-    <div class="section-right">
-      <h1 class="section-title" >Account settings</h1>
-      
-      <div class="section-right-input">
-        <h4 class="input-title">First Name</h4>
-        <input type="text" class="customer-input" placeholder="First Name*" />
-  
-        <h4 class="input-title">Last Name</h4>
-        <input type="text" class="customer-input" placeholder="Last Name*" />
-
-        <h4 class="input-title">User Name</h4>
-        <input type="text" class="customer-input" placeholder="User Name*" />
-  
-        <h4 class="input-title">Password</h4>
-        <input type="text" class="customer-input" placeholder="Password*" />
-
-        <h4 class="input-title">Phone Number</h4>
-        <input type="text" class="customer-input" placeholder="Phone Number*" />
-  
-        <h4 class="input-title">Email</h4>
-        <input type="email" class="customer-input" placeholder="Email*" />
-      </div>
-    </div>
-  </section>
-
-
-  <div class="clearfix"></div>
- 
-</body>
 
   {% comment %} footer {% endcomment %}
   <div class="cover_head_all">
