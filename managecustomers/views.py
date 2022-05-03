@@ -5,4 +5,5 @@ from django import views
 
 
 def show_customer(request):
-    return render(request, "customer/customer.html")
+    context = {}
+    return render(request, "customer/customer.html", context)
