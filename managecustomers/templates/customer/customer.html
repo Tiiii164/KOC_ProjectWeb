@@ -1,60 +1,58 @@
+{% load static %}
+{% block content %}
 
 
 
 
 
-{% load static %} {% block content %}
 
+{% comment %} header {% endcomment %}
+<head>
   <title>Account information</title>
   
   <link rel="stylesheet" href=" {% static 'css/customer.css' %} " />
   <link  rel="stylesheet"  href=" {% static 'font/themify-icons-font/themify-icons/themify-icons.css' %} "/>
   
+</head>
+
+{% comment %} body <script src="{% static 'js/customer.js' %}"></script>{% endcomment %}
 
 
-{% comment %} header {% endcomment %}
-<div class="navbar">
-  <div class="navbar_logo">
-    <a href="http://localhost:8000/" class="cover_logo"
-      ><img
-        src=" {% static 'img/King_Of_Cake_3.png' %} "
-        alt="logo"
-        class="logo"
-    /></a>
-  </div>
-  <div class="navbar_text">
-    <ul class="navbar_list">
-      <a href=""><li class="navbar_item">Birthday Cakes</li></a>
-      <a href=""><li class="navbar_item">Desert</li></a>
-      <a href=""><li class="navbar_item">Drinks</li></a>
-      <a href=""><li class="navbar_item">About</li></a>
-    </ul>
-  </div>
-  <div class="input_text">
-    <i class="ti-search"></i>
-    <input
-      type="text"
-      class="search_input"
-      placeholder="Search product here..."
-    />
-  </div>
-  <div class="navbar_icon">
-    <a href="http://localhost:8000/customer/"><i class="ti-user icon"></i></a>
-    <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
-    <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
-    <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
-    <a href="http://localhost:8000/cart/"
-      ><i class="ti-shopping-cart icon"></i
-    ></a>
-  </div>
-</div>
+  <header>
+    <div class="navbar">
+      <div class="navbar_logo">
+        <a href="http://localhost:8000/" class="cover_logo"><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo"
+        /></a>
+      </div>
+      <div class="navbar_text">
+        <ul class="navbar_list">
+          <a href=""><li class="navbar_item">Birthday Cakes</li></a>
+          <a href=""><li class="navbar_item">Desert</li></a>
+          <a href=""><li class="navbar_item">Drinks</li></a>
+          <a href=""><li class="navbar_item">About</li></a>
+        </ul>
+      </div>
+      <div class="input_text">
+        <input type="text" class="search_input" placeholder="Search in here... *" />
+      </div>
+      <div class="navbar_icon">
+        <a href=""><i class="ti-search icon"></i></a>
+        <a href="http://localhost:8000/customer/"><i class="ti-user icon"></i></a>
+        <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
+        <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
+        <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
+        <a href="http://localhost:8000/cart/"><i class="ti-shopping-cart icon"></i></a>
+      </div>
+    </div>
+  </header>
+  <div class="clearfix"></div>
 
-{% comment %} body {% endcomment %}
+
 <body id="bg" style="background-image: linear-gradient(
   45deg,
   rgba(247, 129, 149, 0.5) 55%,
   rgba(253, 188, 191, 0.8)
-), url('{% static "customerimg/MyCake_19.jpg"%}');>
+), url('{% static "customerimg/MyCake_19.jpg"%}')";>
   
   <section class="main-section">
     <div class="section-left">
@@ -99,55 +97,55 @@
 
 
   <div class="clearfix"></div>
- 
+  <footer>
+    <div class="cover_head_all">
+      <div class="cover_head">
+        <div class="head">
+          <div class="head_text">Sign up for our Newletters</div>
+          <div class="text">
+            Receive my "1000 Melt-In-Your-Mouth" Chocolate Chip Cookies Ebook & get
+            my Latest Recipes!
+          </div>
+          <div class="form_field">
+            <input type="email" class="form_email" placeholder="Email *" />
+            <input type="text" class="form_name" placeholder="Name *" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cover_foot">
+      <div class="foot_content">
+        <div class="foot_content_1">
+          <ul class="col_1">
+            <li class="list_text_1">Information</li>
+            <li class="list_text_1">About</li>
+            <li class="list_text_1">Contact</li>
+            <li class="list_text">Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="foot_content_2">
+          <ul class="col_2">
+            <li class="list_text_2">Contact</li>
+            <li class="list_text">Gmail: kingofcake@gmail.com</li>
+            <li class="list_text">Hotline: (099) 999 9999</li>
+          </ul>
+        </div>
+        <div class="foot_content_3">
+          <ul class="col_3">
+            <li class="list_text_3">Follow</li>
+            <li class="list_text">FACEBOOK</li>
+            <li class="list_text">INSTAGRAM</li>
+            <li class="list_text">TWITTER</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text_end">
+        COPYRIGHT @ 2022 King Of Cake - COOKIES, BROWNIE, AND CHOCOLATE OBSESSED!
+      </div>
+    </div>
+  </footer>
 </body>
 
-  {% comment %} footer {% endcomment %}
-  <div class="cover_head_all">
-    <div class="cover_head">
-      <div class="head">
-        <div class="head_text">Sign up for our Newletters</div>
-        <div class="text">
-          Receive my "1000 Melt-In-Your-Mouth" Chocolate Chip Cookies Ebook &
-          get my Latest Recipes!
-        </div>
-        <div class="form_field">
-          <input type="email" class="form_email" placeholder="Email *" />
-          <input type="text" class="form_name" placeholder="Name *" />
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="cover_foot">
-    <div class="foot_content">
-      <div class="foot_content_1">
-        <ul class="col_1">
-          <li class="list_text_1">Information</li>
-          <li class="list_text_1">About</li>
-          <li class="list_text_1">Contact</li>
-          <li class="list_text">Privacy Policy</li>
-        </ul>
-      </div>
-      <div class="foot_content_2">
-        <ul class="col_2">
-          <li class="list_text_2">Contact</li>
-          <li class="list_text">Gmail: kingofcake@gmail.com</li>
-          <li class="list_text">Hotline: (099) 999 9999</li>
-        </ul>
-      </div>
-      <div class="foot_content_3">
-        <ul class="col_3">
-          <li class="list_text_3">Follow</li>
-          <li class="list_text">FACEBOOK</li>
-          <li class="list_text">INSTAGRAM</li>
-          <li class="list_text">TWITTER</li>
-        </ul>
-      </div>
-    </div>
-    <div class="text_end">
-      COPYRIGHT @ 2022 King Of Cake - COOKIES, BROWNIE, AND CHOCOLATE OBSESSED!
-    </div>
-  </div>
-  {% endblock %}
-</div>
+{% endblock %}
