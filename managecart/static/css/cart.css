@@ -204,8 +204,8 @@ html {
 
 .totalcart{
     border-left: black 2px solid;
-    margin-left: 50px;
-    margin-right: -100px;
+    margin-left: 100px;
+    margin-right: -150px;
 }
 .button{
     margin-top: 24px;
@@ -221,18 +221,22 @@ html {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: pink;
+    background-color: rgb(216, 210, 210);
     border: none;
     border-radius: 20px;
-    box-shadow: 0 6px #999;
+    box-shadow: 0 6px rgb(124, 123, 123);
     margin-bottom: 50px;
   }
-  .button:hover {background-color: #58257b}
+  .button:hover {background-color: #ffb6c1}
 
 .button:active {
-  background-color: #58257b;
-  box-shadow: 0 5px #666;
+  background-color: #ffb6c1;
+  box-shadow: 0 5px rgb(124, 123, 123);
   transform: translateY(4px);
+}
+
+.button1:hover{
+    background-color: #ffb6c1;
 }
 /* footer */
 
