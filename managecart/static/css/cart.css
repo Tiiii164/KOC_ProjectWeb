@@ -238,6 +238,11 @@ html {
 .button1:hover{
     background-color: #ffb6c1;
 }
+
+.button1:active{
+    transform: translateY(4px);
+}
+}
 /* footer */
 
 .head_text {
