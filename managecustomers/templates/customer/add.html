@@ -1,7 +1,4 @@
 
-
-{% block content %}
-{% endblock %}
 {% load static %} {% block content %}
 
   <title>Account information</title>
@@ -47,6 +44,26 @@
     ></a>
   </div>
 </div>
+{% comment %} body {% endcomment %}
+
+<form method="POST">
+  {% csrf_token %}
+  {{form}}
+
+  <div>
+    <button type="submit">Add</button>
+  </div>
+
+</form>
+
+<div>
+  <a href="/customer">Back to list</a>
+</div>
+
+
+
+
+
 
   {% comment %} footer {% endcomment %}
   <div class="cover_head_all">

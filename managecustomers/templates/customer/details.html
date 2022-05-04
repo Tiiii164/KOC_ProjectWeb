@@ -1,7 +1,4 @@
 
-
-{% block content %}
-{% endblock %}
 {% load static %} {% block content %}
 
   <title>Account information</title>
@@ -46,6 +43,32 @@
       ><i class="ti-shopping-cart icon"></i
     ></a>
   </div>
+</div>
+
+{% comment %} body {% endcomment %}
+
+<table>
+  <tr>
+    <th>UserName</th>
+    <td>{{user.username}}</td>
+  </tr>
+  <tr>
+    <th>FirstName</th>
+    <td>{{user.firstname}}</td>
+  </tr>
+  <tr>
+    <th>LastName</th>
+    <td>{{user.lastname}}</td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td>{{user.email}}</td>
+  </tr>
+ 
+</table>
+
+<div>
+  <a href="/customer">Back to list</a>
 </div>
 
   {% comment %} footer {% endcomment %}
