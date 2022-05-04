@@ -134,6 +134,10 @@ html {
     display: flex;
     
 }
+
+.table{
+    margin-left: 30px;
+}
 .totalcart{
     width: 50%;
     text-align: left;
