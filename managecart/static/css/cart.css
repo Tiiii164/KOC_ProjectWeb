@@ -226,6 +226,7 @@ html {
     border-radius: 20px;
     box-shadow: 0 6px rgb(124, 123, 123);
     margin-bottom: 50px;
+    font-family: cursive;
   }
   .button:hover {background-color: #ffb6c1}
 
@@ -237,6 +238,17 @@ html {
 
 .button1:hover{
     background-color: #ffb6c1;
+}
+
+.button1:active{
+    transform: translateY(4px);
+}
+.description{
+    font-family: cursive;
+}
+
+.header1{
+    font-family: cursive;
 }
 /* footer */
 
