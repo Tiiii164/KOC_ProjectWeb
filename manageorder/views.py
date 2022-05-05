@@ -1,5 +1,11 @@
 from django.shortcuts import render
-
+from manageCake.models import Product
 # Create your views here.
+
+
 def show_order(request):
-    return render(request, "order/order.html")
+    products = Product.objects.all()
+    context = {
+        "products": products
+    }
+    return render(request, "order/order.html", context)
