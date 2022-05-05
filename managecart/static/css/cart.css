@@ -95,124 +95,29 @@ html {
 
 
 /* -----------------------Cart-----------------*/
-.cartlist {
-    width: 50%;
+.cart-list {
     text-align: center;
-    padding-top: 30px;
-    flex: 1;
-    align-items: center;
-    
+    padding-top: 20px;
 }
-.cartlist h2{
-  
-  text-align: center;
-  padding: 15px 20px;
-  color: pink;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-style: solid;
-  border-color: pink;
-  border-radius: 10px;
-  width: 50%;
-  margin: 12px 0 0 30px;
+.cart-list table{
+    width: 80%;
+    margin-left: 10%;
 }
-
-.cartlist table{
-    width: 100%;
-    
-}
-.cartlist table thead tr th:first-child{
+.cart-list table thead tr th:first-child{
     text-align: left;
 }
-.cartlist table tr td{
+.cart-list table tr td{
     border: 2px solid black;
     border-radius: 10px;
     padding: 12px 0;
 }
-.cart1234{
-    display: flex;
-    
-}
 
-.table{
-    margin-left: 30px;
-}
-.totalcart{
-    width: 50%;
-    text-align: left;
-    padding-top: 30px;
-    flex: 0.75;
-    align-items: center;
-    
-}
-.totalcart h2{
-    text-align: center;
-    padding: 15px 20px;
-    color: pink;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-style: solid;
-    border-color: pink;
-    border-radius: 10px;
-    width: 50%;
-    margin: 12px 0 0 30px;
-  }
-
-.subtotals{
-    display: flex;
-}
-.subtotal1{
-    flex: 1;
-    
-}
-.subtotal{
-    border: black 2px solid;
-    width: 40%;
-    padding: 16px;
-    margin-top: 24px;
-    margin-left: 44px;
-    text-align: center;
-    font-family: cursive;
-}
-.money{
-    flex: 1;
-    margin-top: 40px;
-    font-family: cursive;
-}
-.totals{
-    display: flex;
-}
-.total1{
-    flex:1
-}
-.total{
-    border: black 2px solid;
-    width: 40%; 
-    padding: 16px;
-    margin-top: 24px;
-    margin-left: 44px;
-    text-align: center;
-    font-family: cursive;
-}
-.money1{
-    flex: 1;
-    margin-top: 40px;
+.description{
     font-family: cursive;
 }
 
-.totalcart{
-    border-left: black 2px solid;
-    margin-left: 100px;
-    margin-right: -150px;
-}
-.button{
-    margin-top: 24px;
-    margin-left: 10%;
-    
-}
 .button {
+    margin-top: 24px;
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
@@ -228,7 +133,10 @@ html {
     margin-bottom: 50px;
     font-family: cursive;
   }
-  .button:hover {background-color: #ffb6c1}
+
+.button:hover{
+    background-color: #ffb6c1;
+}
 
 .button:active {
   background-color: #ffb6c1;
@@ -236,19 +144,34 @@ html {
   transform: translateY(4px);
 }
 
-.button1:hover{
+
+.submit{
+    border: 1px solid black;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: cursive;
+    background-color: rgb(68, 66, 57);
+    color: #fff;
+}
+.submit:hover{
     background-color: #ffb6c1;
 }
-
-.button1:active{
+.submit:active{
     transform: translateY(4px);
 }
-.description{
+.remove{
+    border: 1px solid red;
+    border-radius: 5px;
     font-family: cursive;
+    background-color: red;
+    cursor: pointer;
+    color: white;    
 }
-
-.header1{
-    font-family: cursive;
+.remove:hover{
+    background-color: black;
+}
+.remove:active{
+    transform: translateY(4px);
 }
 /* footer */
 
@@ -340,25 +263,5 @@ html {
     color: #fff;
     padding-bottom: 28px;
 }
-.button1{
-    border: 2px solid black;;
-    border-radius: 5px;
-    border: 1px solid black;;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: cursive;
-    background-color: rgb(68, 66, 57);
-    color: #fff;
-}
-.buttonoutline{
-    text-align: center;
-    font-family: cursive;
-}
-.column{
-    text-align: center;
-    font-family: cursive;
-}
-.dollar{
-    font-family: cursive;
-}
+
 

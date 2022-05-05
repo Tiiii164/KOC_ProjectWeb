@@ -24,8 +24,10 @@ def product_detail(request):
 
 
 def add_to_cart(request, product_id):
-    product = Product.objects.get(id=product_id)
     cart = Cart.objects.get(id=1)
+    
+    product = Product.objects.get(id=product_id)
+    
 
     cart_item = CartItems.objects.filter(Product=product, Cart=cart).first()
     if cart_item is None:
