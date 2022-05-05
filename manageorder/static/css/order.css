@@ -307,3 +307,57 @@ html {
     color: #fff;
     
 }
+
+.checkout-section{
+    display: block;
+    border: 2px solid black;;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.text-checkout{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 12px;
+    color: #000;
+    font-family: Gabriola;
+}
+
+.bill-checkout{
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    font-family: Gabriola;
+}
+
+.place-order-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    background: #ffb6c1;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-family: Gabriola;
+    font-size: 30px;
+    box-shadow: 0 6px rgb(124, 123, 123);
+}
+
+.place-order-btn:active{
+    background-color: #ffb6c1;
+    box-shadow: 0 5px rgb(124, 123, 123);
+    transform: translateY(4px);
+}
+
+.place-order-btn:hover{
+    background-color: #ffb6c1;
+}
