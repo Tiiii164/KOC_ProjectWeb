@@ -57,9 +57,11 @@
           {% for product in products %}
           <tr>
             <td class="column" style="display: flex;align-items:center"><img style="width: 120px; height: 100px; border-radius: 6px;"
-              img src="{{product.Image}}" alt="{{product.Name}}">: Name Product</td>
+              img src="{{product.Image}}" alt="{{product.Name}}"><div class="cake_name">{{product.Name}}</div></td>
             <td class="column">
-              <p class="dollar"><span>0</span><sup>$</sup></p>
+              <div class="price">
+                {{product.Price}} VNĐ
+              </div>
             </td>
             <td class="column"><input style="width: 30px; outline:none; border-radius: 5px;" type="number" value="1" min="1"></td>
             <td class="column">
