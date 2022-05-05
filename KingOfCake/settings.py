@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'managecustomers',
     'managecart',
     'manageorder',
+    'mathfilters',
 ]
 
 MIDDLEWARE = [
