@@ -8,7 +8,8 @@
 {% comment %} header {% endcomment %}
 <div class="navbar">
   <div class="navbar_logo">
-    <a href="http://localhost:8000/" class="cover_logo"><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo"
+    <a href="http://localhost:8000/" class="cover_logo"
+      ><img src=" {% static 'img/King_Of_Cake_3.png' %} " alt="" class="logo"
     /></a>
   </div>
   <div class="navbar_text">
@@ -20,7 +21,9 @@
     </ul>
   </div>
   <div class="navbar_icon">
-    <a href="http://localhost:8000/cart/"><i class="ti-shopping-cart icon"></i></a>
+    <a href="http://localhost:8000/cart/"
+      ><i class="ti-shopping-cart icon"></i
+    ></a>
     <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
     <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
     <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
@@ -28,54 +31,59 @@
   </div>
   <div class="input_text">
     <i class="ti-search"></i>
-    <input type="text" class="search_input" placeholder="Search product here..."/>
+    <input
+      type="text"
+      class="search_input"
+      placeholder="Search product here..."
+    />
   </div>
 </div>
-  <div class="form ">
-    <h1 class="heading">Checkout</h1>
-    <p class="heading_2">Delivery address</p>
-      <input type="text" placeholder="Address">
-      <input type="text" placeholder="Ward">
-    <div class="three-input-container">
-      <input type="text" placeholder="City">
-      <input type="text" placeholder="District">
-      <input type="text" placeholder="Postal code">
-    </div>
-      <input type="text" placeholder="Nation">
+<div class="form">
+  <h1 class="heading">Checkout</h1>
+  <p class="heading_2">Delivery address</p>
+  <input type="text" placeholder="Address" />
+  <input type="text" placeholder="Ward" />
+  <div class="three-input-container">
+    <input type="text" placeholder="City" />
+    <input type="text" placeholder="District" />
+    <input type="text" placeholder="Postal code" />
   </div>
-  <section class="cart-list">
-      <table>
-        <thead>
-          <tr class="description">
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Analyze</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for product in products %}
-          <tr>
-            <td class="column" style="display: flex;align-items:center"><img style="width: 120px; height: 100px; border-radius: 6px;"
-              img src="{{product.Image}}" alt="{{product.Name}}"><div class="cake_name">{{product.Name}}</div></td>
-            <td class="column">
-              <div class="price">
-                {{product.Price}} VNĐ
-              </div>
-            </td>
-            <td class="column"><input style="width: 30px; outline:none; border-radius: 5px;" type="number" value="1" min="1"></td>
-            <td class="column">
-            <button class="button">Delete</button>
-          </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-  </section>
-  
-{% comment %} content {% endcomment %}
+  <input type="text" placeholder="Nation" />
+</div>
+<section class="cart-list">
+  <table>
+    <thead>
+      <tr class="description">
+        <th>Product</th>
+        <th>Price</th>
+        <th>Analyze</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+      <tr>
+        <td class="column" style="display: flex; align-items: center">
+          <img
+            style="width: 120px; height: 100px; border-radius: 6px"
+            img
+            src="{{product.Image}}"
+            alt="{{product.Name}}"
+          />
+          <div class="cake_name">{{product.Name}}</div>
+        </td>
+        <td class="column">
+          <div class="price">{{product.Price}} VNĐ</div>
+        </td>
+        <td class="column">
+          <button class="button">Delete</button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
 
-{% comment %} footer {% endcomment %}
+{% comment %} content {% endcomment %} {% comment %} footer {% endcomment %}
 <div class="cover_head_all">
   <div class="cover_head">
     <div class="head">
