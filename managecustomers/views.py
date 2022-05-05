@@ -23,19 +23,23 @@ def details(request, id):
 
 
 def add(request):
-    forms = UserForm(request.POST or None)
+    form = UserForm(request.POST or None)
 
-    if forms.is_valid():
+    if form.is_valid():
         username = request.POST["username"]
         password = request.POST["password"]
         email = request.POST["email"]
 
-        user = User.objects.create_user(username, email.password)
+        user = User.objects.create_user(username, email, password)
 
         user.save()
 
         return redirect(show_customer)
-    context = {}
+
+    context = {
+        "form": form,
+    }
+
     return render(request, "customer/add.html", context)
 
 
