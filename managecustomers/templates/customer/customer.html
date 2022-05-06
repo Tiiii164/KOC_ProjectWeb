@@ -8,53 +8,53 @@
   
 
 
-{% comment %} header {% endcomment %}
-<div class="navbar">
-  <div class="navbar_logo">
-    <a href="http://localhost:8000/" class="cover_logo"
-      ><img
-        src=" {% static 'img/King_Of_Cake_3.png' %} "
-        alt="logo"
-        class="logo"
-    /></a>
+  {% comment %} header {% endcomment %}
+  <div class="navbar">
+    <div class="navbar_logo">
+      <a href="http://localhost:8000/" class="cover_logo"
+        ><img
+          src=" {% static 'img/King_Of_Cake_3.png' %} "
+          alt="logo"
+          class="logo"
+      /></a>
+    </div>
+    <div class="navbar_text">
+      <ul class="navbar_list">
+        <a href=""><li class="navbar_item">Birthday Cakes</li></a>
+        <a href=""><li class="navbar_item">Desert</li></a>
+        <a href=""><li class="navbar_item">Drinks</li></a>
+        <a href=""><li class="navbar_item">About</li></a>
+      </ul>
+    </div>
+    <div class="input_text">
+      <i class="ti-search"></i>
+      <input
+        type="text"
+        class="search_input"
+        placeholder="Search product here..."
+      />
+    </div>
+    <div class="navbar_icon">
+      <a href="http://localhost:8000/customer/"><i class="ti-user icon"></i></a>
+      <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
+      <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
+      <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
+      <a href="http://localhost:8000/cart/"
+        ><i class="ti-shopping-cart icon"></i
+      ></a>
+    </div>
   </div>
-  <div class="navbar_text">
-    <ul class="navbar_list">
-      <a href=""><li class="navbar_item">Birthday Cakes</li></a>
-      <a href=""><li class="navbar_item">Desert</li></a>
-      <a href=""><li class="navbar_item">Drinks</li></a>
-      <a href=""><li class="navbar_item">About</li></a>
-    </ul>
-  </div>
-  <div class="input_text">
-    <i class="ti-search"></i>
-    <input
-      type="text"
-      class="search_input"
-      placeholder="Search product here..."
-    />
-  </div>
-  <div class="navbar_icon">
-    <a href="http://localhost:8000/customer/"><i class="ti-user icon"></i></a>
-    <a href="https://www.facebook.com/"><i class="ti-facebook icon"></i></a>
-    <a href="https://www.instagram.com/"><i class="ti-instagram icon"></i></a>
-    <a href="https://twitter.com/"><i class="ti-twitter icon"></i></a>
-    <a href="http://localhost:8000/cart/"
-      ><i class="ti-shopping-cart icon"></i
-    ></a>
-  </div>
-</div>
 
 {% comment %} body {% endcomment %}
 
-<div>
+<div class="add-btn">
   <a href="add">Add</a>
 </div>
 <table >
   <tr>
-    <th>No</th>
-    <th>UserName</th>
-    <th>Email</th>
+    <th class="heading">No</th>
+    <th class="heading">UserName</th>
+    <th class="heading">Email</th>
     <th></th>
   </tr>
   {% for user in users %}
@@ -62,13 +62,9 @@
     <td>{{forloop.counter}}</td>
     <td>{{user.username}}</td>
     <td>{{user.email}}</td>
-    <td>
-      <a href="{{user.id}}">Details</a>
-
-      <a href="delete/{{user.id}}">Delete</a>
-
-      <a href="edit/{{user.id}}">Edit</a>
-    </td>
+    <td class="section-btn"><a href="{{user.id}}">Details</a></td>
+    <td class="section-btn"><a href="delete/{{user.id}}">Delete</a></td>
+    <td class="section-btn"><a href="edit/{{user.id}}">Edit</td>
   </tr>
   {% endfor %}
 </table>
