@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
 from django.contrib.auth.models import User
-from managecustomers.forms import UserForm
+from managecustomers.forms import UserForm, UserEditForm
 # Create your views here.
 
 
@@ -31,7 +31,9 @@ def add(request):
         email = request.POST["email"]
 
         user = User.objects.create_user(username, email, password)
-
+        # dòng này để
+        user.first_name = request.POST["first_name"]
+        user.last_name = request.POST["last_name"]
         user.save()
 
         return redirect(show_customer)
@@ -50,8 +52,22 @@ def delete(request, id):
 
 
 def edit(request, id):
-    context = {}
-    return render(request, "customer/update.html", context)
+    user = get_object_or_404(User, id=id)
+    form = UserEditForm(request.POST or None, instance=user)
+
+    if form.is_valid():
+        # 3 dòng này để nhận fname và lname từ dtb lên
+        user.first_name = request.POST["first_name"]
+        user.last_name = request.POST["last_name"]
+        user.email = request.POST["email"]
+        user.save()
+
+        return redirect(show_customer)
+
+    context = {
+        "form": form,
+    }
+    return render(request, "customer/edit.html", context)
 
 
 def back_to_list(request):

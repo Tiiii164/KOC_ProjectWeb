@@ -45,6 +45,24 @@
   </div>
 </div>
 
+{% comment %} body {% endcomment %}
+
+<form method="POST">
+  {% csrf_token %}
+  {{form}}
+
+  <div>
+    <button type="submit">Edit</button>
+  </div>
+
+</form>
+
+<div>
+  <a href="/customer">Back to list</a>
+</div>
+
+
+
   {% comment %} footer {% endcomment %}
   <div class="cover_head_all">
     <div class="cover_head">
