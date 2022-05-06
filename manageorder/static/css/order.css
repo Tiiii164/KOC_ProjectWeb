@@ -248,4 +248,10 @@ html {
 }
 
 /* ------------------------- Checkout ------------------------ */
-
+.header-checkout{
+    font-family: Gabriola;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    text-align: center;
+    font-size: 45px;
+}
