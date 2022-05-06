@@ -50,14 +50,16 @@
   {% csrf_token %}
   {{form}}
 
-  <div class="btn-add">
-    <button type="submit">Add</button>
+  <div>
+    <button type="submit" class="section-btn">Add</button>
   </div>
 
 </form>
 
 <div>
-  <a href="/customer">Back to list</a>
+  <button class="section-btn">
+    <a href="/customer" class="description-btn">Back to list</a>
+  </button>
 </div>
 
 
