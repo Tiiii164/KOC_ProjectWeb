@@ -112,16 +112,22 @@ html {
     padding: 12px 0;
     margin-left: 28px;
     text-align: center;
+    font-family: cursive;
+    border-radius: 24px;
+    font-weight: bold;
 }
 
 .cake_img {
-    width: 250px;
-    height: 200px;
-    margin: 12px 0;
+    width: 100%;
+    height: 220px;
 }
 
 .cake_name {
     text-align: center;
+    margin-bottom: 12px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .cake_price {
@@ -139,6 +145,7 @@ html {
     cursor: pointer;
     transition: 0.2s linear;
     font-family: cursive;
+    font-weight: bold;
 }
 
 .add_to_cart:hover {
@@ -148,13 +155,17 @@ html {
 }
 
 .cover_items {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
     border-bottom: #000 2px solid;
     padding-bottom: 24px;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
 }
-
+.cake_items {
+    margin: 20px 0;
+}
 .dessert {
     margin-top: 24px;
 }

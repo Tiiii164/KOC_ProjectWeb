@@ -38,57 +38,8 @@
     />
   </div>
 </div>
-<div class="form">
-  <h1 class="heading">Checkout</h1>
-  <p class="heading_2">Delivery address</p>
-  <input type="text" placeholder="Address" />
-  <input type="text" placeholder="Ward" />
-  <div class="three-input-container">
-    <input type="text" placeholder="City" />
-    <input type="text" placeholder="District" />
-    <input type="text" placeholder="Postal code" />
-  </div>
-  <input type="text" placeholder="Nation" />
-</div>
-<section class="cart-list">
-  <table>
-    <thead>
-      <tr class="description">
-        <th>Product</th>
-        <th>Price</th>
-        <th>Analyze</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for product in products %}
-      <tr>
-        <td class="column" style="display: flex; align-items: center">
-          <img
-            style="width: 120px; height: 100px; border-radius: 6px"
-            img
-            src="{{product.Image}}"
-            alt="{{product.Name}}"
-          />
-          <div class="cake_name">{{product.Name}}</div>
-        </td>
-        <td class="column">
-          <div class="price">{{product.Price}} VNĐ</div>
-        </td>
-        <td class="column">
-          <button class="button">Delete</button>
-        </td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  <div class="checkout-section">
-    <div class="checkout-box">
-      <p class="text-checkout">Your Total Bill</p>
-      <h1 class="bill-checkout">$00</h1>
-      <a href="http://localhost:8000/" class="place-order-btn">Place Order</a>
-    </div>
-  </div>
-</section>
+<h1>Congratulation! Your order "{{order_id}}" is successfully placed</h1>
+<h1>Thank You!</h1>
 
 {% comment %} content {% endcomment %} {% comment %} footer {% endcomment %}
 <div class="cover_head_all">
