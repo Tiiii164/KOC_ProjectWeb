@@ -71,11 +71,15 @@
     {% endfor %}
       </tbody>
   </table>
-  <a href="http://localhost:8000/order/">
-    <button class="button" type="button"> 
+
+  {% if cart_items %}
+
+  <a href="http://localhost:8000/order" class="button"> 
       Proceed to checkout
-    </button>
   </a>
+  {% else %}
+  <a href="/" class="button" type="button">Continue Shopping</a>
+  {% endif %}
 
 </section>
 

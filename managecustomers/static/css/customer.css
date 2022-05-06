@@ -197,11 +197,14 @@ html {
     padding-bottom: 28px;
 }
 
-.heading{
-    font-family: cursive;
-    font-size: 30px;
-    text-align: center;
-    word-spacing: 50px;
+/* --------------------------- content ------------------------------ */
+
+.table-all{
+    margin-bottom: -250px;
+}
+
+.table-details{
+    padding: 20px;
 }
 
 .section-btn{
@@ -219,7 +222,8 @@ html {
     border: none;
     border-radius: 20px;
     box-shadow: 0 6px rgb(124, 123, 123);
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .section-btn:hover{
@@ -234,21 +238,220 @@ html {
 
 .add-btn{
     font-family: cursive;
-    margin-left: 90%;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
     color: #fff;
     background-color: rgb(216, 210, 210);
     border: none;
     border-radius: 20px;
     box-shadow: 0 6px rgb(124, 123, 123);
-    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 90%;
+}
+
+.add-btn:hover{
+    background-color: #ffb6c1;
+}
+
+.add-btn:active {
+  background-color: #ffb6c1;
+  box-shadow: 0 5px rgb(124, 123, 123);
+  transform: translateY(4px);
 }
 
 .section-description{
     font-family: cursive;
-    padding: 10px;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-left: 50px;
 }
 
-.description-btn{
-    color: #fff;
+.description-btl-btn{
+    font-family: cursive;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(216, 210, 210);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px rgb(124, 123, 123);
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.description-btl-btn:active{
+    background-color: #ffb6c1;
+    box-shadow: 0 5px rgb(124, 123, 123);
+    transform: translateY(4px);
+}
+
+.description-btl-btn:hover{
+    background-color: #ffb6c1;
+}
+
+.container-description-1{
+    font-family: cursive;
+    padding: 45px;
+    border: 2px #000 solid;
+    border-radius: 15px;
+}
+
+
+.btn-container{
+    border: 2px #000 solid;
+}
+
+.section-btn-add{
+    font-family: cursive;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(216, 210, 210);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px rgb(124, 123, 123);
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.section-btn-add:active{
+    background-color: #ffb6c1;
+    box-shadow: 0 5px rgb(124, 123, 123);
+    transform: translateY(4px);
+}
+
+.section-btn-add:hover{
+    background-color: #ffb6c1;
+}
+
+.table-content{
+    display: flex;
+}
+
+.table-content-1,
+.table-content-2,
+.table-content-3{
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn-edit{
+    font-family: cursive;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(216, 210, 210);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px rgb(124, 123, 123);
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.btn-edit:active{
+    background-color: #ffb6c1;
+    box-shadow: 0 5px rgb(124, 123, 123);
+    transform: translateY(4px);
+}
+
+.btn-edit:hover{
+    background-color: #ffb6c1;
+}
+
+.btn-btl{
+    font-family: cursive;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(216, 210, 210);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px rgb(124, 123, 123);
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.btn-btl:active{
+    background-color: #ffb6c1;
+    box-shadow: 0 5px rgb(124, 123, 123);
+    transform: translateY(4px);
+}
+
+.btn-btl:hover{
+    background-color: #ffb6c1;
+}
+
+.table-details{
+    margin-left: 20px;
+}
+
+.description-details{
+    font-family: cursive;
+    padding: 45px;
+    border: 2px #000 solid;
+    border-radius: 15px;
+}
+
+.section-btn-btl{
+    font-family: cursive;
+    margin-top: 15px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(216, 210, 210);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px rgb(124, 123, 123);
+    margin-left: 40px;
+    width: 20%;
+    margin-bottom: -200px;
+}
+
+.section-btn-btl:active{
+    background-color: #ffb6c1;
+    box-shadow: 0 5px rgb(124, 123, 123);
+    transform: translateY(4px);
+}
+
+
+.section-btn-btl:hover{
+    background-color: #ffb6c1;
 }

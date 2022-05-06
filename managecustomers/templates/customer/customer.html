@@ -47,24 +47,22 @@
 
 {% comment %} body {% endcomment %}
 
-<div class="add-btn">
-  <a href="add">Add</a>
-</div>
-<table >
-  <tr>
-    <th class="heading">No</th>
-    <th class="heading">UserName</th>
-    <th class="heading">Email</th>
-    <th></th>
-  </tr>
+
+<table class="table-all">
+    <div class="table-content">
+      <div class="table-content-1">No</div>
+      <div class="table-content-2">Username</div>
+      <div class="table-content-3">Email</div>
+  </div>
   {% for user in users %}
   <tr>
-    <td>{{forloop.counter}}</td>
-    <td>{{user.username}}</td>
-    <td>{{user.email}}</td>
-    <td class="section-btn"><a href="{{user.id}}">Details</a></td>
-    <td class="section-btn"><a href="delete/{{user.id}}">Delete</a></td>
-    <td class="section-btn"><a href="edit/{{user.id}}">Edit</td>
+    <td class="container-description-1">{{forloop.counter}}</td>
+    <td class="container-description-1">{{user.username}}</td>
+    <td class="container-description-1">{{user.email}}</td>
+    <td><a href="{{user.id}}" class="section-btn">Details</a></td>
+    <td><a href="delete/{{user.id}}" class="section-btn">Delete</a></td>
+    <td><a href="edit/{{user.id}}" class="section-btn">Edit</td>
+    <td><a href="add" class="add-btn">Add</a></td>
   </tr>
   {% endfor %}
 </table>
