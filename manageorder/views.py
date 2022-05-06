@@ -30,8 +30,5 @@ def show_order(request):
             order_item.save()
             item.delete()
 
-            context={
-                "order_id": order.id,
-            }
-    return render(request, "order/order.html", context)
+    return render(request, "order/order.html")
 
