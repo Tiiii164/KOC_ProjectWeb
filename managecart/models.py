@@ -6,7 +6,8 @@ from django.contrib.auth.models import User
 
 
 class Cart(models.Model):
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    User = models.ForeignKey(User, on_delete=models.CASCADE,
+    blank=True, null=True)
 
     def __str__(self) -> str:
         return "Cart_" + str(self.User)
