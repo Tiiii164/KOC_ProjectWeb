@@ -25,13 +25,9 @@ def product_detail(request):
 
 def add_to_cart(request, product_id):
     cart = Cart.objects.get(id=1)
-    
     product = Product.objects.get(id=product_id)
-    
-
     cart_item = CartItems.objects.filter(Product=product, Cart=cart).first()
     if cart_item is None:
-
         cart_item = CartItems()
         cart_item.Product = product
         cart_item.Cart = cart
