@@ -39,7 +39,7 @@ class UserForm(forms.ModelForm):
                 "required": False,
 
                 "class": "container-description-2",
-                "placeholder": "Enter UserName here ...",
+                "placeholder": "Enter FirstName here ...",
 
             }
             ),
@@ -47,7 +47,7 @@ class UserForm(forms.ModelForm):
                 "required": False,
 
                 "class": "container-description-2",
-                "placeholder": "Enter UserName here ...",
+                "placeholder": "Enter LastName here ...",
 
             }
             ),
@@ -77,7 +77,7 @@ class UserEditForm(forms.ModelForm):
                 "required": False,
 
                 "class": "container-description-2",
-                "placeholder": "Enter UserName here ...",
+                "placeholder": "Enter FirstName here ...",
 
             }
             ),
@@ -85,7 +85,7 @@ class UserEditForm(forms.ModelForm):
                 "required": False,
 
                 "class": "container-description-2",
-                "placeholder": "Enter UserName here ...",
+                "placeholder": "Enter LastName here ...",
 
             }
             ),
