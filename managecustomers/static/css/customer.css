@@ -308,8 +308,18 @@ html {
     border: 2px #000 solid;
     border-radius: 15px;
 }
-
-
+.container-description-2{
+    font-family: cursive;
+    padding: 20px;
+    border: 2px #000 solid;
+    border-radius: 15px;
+    display:block;
+    margin: 12px 12px ;
+    
+}
+.labell{
+    text-align: center;
+}
 .btn-container{
     border: 2px #000 solid;
 }

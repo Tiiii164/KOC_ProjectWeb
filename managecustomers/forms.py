@@ -18,27 +18,27 @@ class UserForm(forms.ModelForm):
             "username": forms.TextInput(attrs={
                 "required": True,
 
-                "class": "form-control mt-1 mb-3",
+                "class": "container-description-2",
                 "placeholder": "Enter UserName here ...",
 
             }
             ),
             "password": forms.PasswordInput(attrs={
                 "required": True,
-                "class": "form-control",
+                "class": "container-description-2",
                 "placeholder": "Enter password here ...",
             }
             ),
             "email": forms.EmailInput(attrs={
                 "required": True,
-                "class": "form-control",
+                "class": "container-description-2",
                 "placeholder": "Enter email here ...",
             }
             ),
             "first_name": forms.TextInput(attrs={
                 "required": False,
 
-                "class": "form-control mt-1 mb-3",
+                "class": "container-description-2",
                 "placeholder": "Enter UserName here ...",
 
             }
@@ -46,7 +46,7 @@ class UserForm(forms.ModelForm):
             "last_name": forms.TextInput(attrs={
                 "required": False,
 
-                "class": "form-control mt-1 mb-3",
+                "class": "container-description-2",
                 "placeholder": "Enter UserName here ...",
 
             }
@@ -69,14 +69,14 @@ class UserEditForm(forms.ModelForm):
 
             "email": forms.EmailInput(attrs={
                 "required": True,
-                "class": "form-control",
+                "class": "container-description-2",
                 "placeholder": "Enter email here ...",
             }
             ),
             "first_name": forms.TextInput(attrs={
                 "required": False,
 
-                "class": "form-control mt-1 mb-3",
+                "class": "container-description-2",
                 "placeholder": "Enter UserName here ...",
 
             }
@@ -84,7 +84,7 @@ class UserEditForm(forms.ModelForm):
             "last_name": forms.TextInput(attrs={
                 "required": False,
 
-                "class": "form-control mt-1 mb-3",
+                "class": "container-description-2",
                 "placeholder": "Enter UserName here ...",
 
             }
